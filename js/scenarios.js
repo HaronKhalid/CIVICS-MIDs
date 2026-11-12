@@ -1,11 +1,11 @@
-/* Scenarios: shared question engine (render / read / grade / feedback) + the Scenarios page (Data Science).
+/* Scenarios: shared question engine (render / read / grade / feedback) + the Scenarios page (Civics).
    Content comes from scenario-data.js, progress from progress.js. */
 
 const SC=SCENARIOS.filter(s=>s.published);
-const SC_CATS={"identify":"Identify the concept","apply":"Apply / calculate","diagnose":"Diagnose a problem","choose":"Choose a method or metric","interpret":"Interpret a chart or result","integrated":"Integrated case"};
+const SC_CATS={"identify":"Identify the concept","apply":"Apply to a situation","diagnose":"Compare and judge","choose":"Choose the best answer","interpret":"Read and interpret","integrated":"Full case (mixed)"};
 const DIFF_L={easy:"Easy",medium:"Medium",hard:"Hard"};
 const STATUS={correct:["✔","Correct"],partial:["◐","Partly correct"],wrong:["✘","Incorrect"],unanswered:["○","Not answered"],written:["✎","Written answer (self-assess below)"]};
-const RUBRIC=[["Correctly identifies the problem",2],["Selects a suitable model / concept",2],["Applies the model to the scenario facts",3],["Recommends a suitable action",2],["Gives a clear justification",1]];
+const RUBRIC=[["Understands what the situation is about",2],["Names the right civics concept",2],["Links the concept to facts in the situation",3],["Suggests a sensible action or conclusion",2],["Gives a clear reason",1]];
 
 /* lesson -> scenario tag, plus a short “where would you use this?” line */
 const TOPIC_TAGS={"c1-1":"civics-def","c1-2":"history","c1-3":"significance","c1-4":"key-concepts",
@@ -114,7 +114,7 @@ function scList(){
   scBox().innerHTML=`
    <p class="sc-lead">Read a real-life situation, spot the civics concept, choose the right answer and justify it. This is how exam questions test understanding.</p>
    <div class="card sc-filters">
-     <div><label for="scQ">Search</label><input type="text" id="scQ" placeholder="e.g. McCall, refund, recovery" value="${esc(SCS.q)}"></div>
+     <div><label for="scQ">Search</label><input type="text" id="scQ" placeholder="e.g. voting, protest, citizen, democracy" value="${esc(SCS.q)}"></div>
      <div class="row">
        ${sel("scCh","Topic",[["all","All topics"],...CHAPTERS.map(([id,n],i)=>[String(i+1),(i+1)+". "+n])],SCS.ch)}
        ${sel("scCat","Category",[["all","All categories"],...Object.entries(SC_CATS)],SCS.cat)}
@@ -178,17 +178,17 @@ function scBodyRender(s){scMode==="guided"?scGuided(s):scExamSetup(s)}
 
 /* ---------- guided practice: five thinking stages, then questions ---------- */
 const STAGES=[
- ["A","Understand the problem","What is happening? What is the main quality concern? Which facts in the case matter?",s=>s.solution.problem],
- ["B","Identify the concept","Which model, factor, cost category, QA technique or containment method applies? Why is it relevant?",s=>s.solution.concepts],
- ["C","Apply it","Connect the facts to the model's characteristics or steps. Do not just write a definition.",s=>s.solution.apply],
- ["D","Recommend an action","Suggest a practical action. How would you measure success?",s=>s.solution.recs],
- ["E","Justify your choice","Why is this suitable? Mention limits or trade-offs.",s=>[s.solution.just,...s.solution.mistakes.map(m=>"Common mistake: "+m)]]];
+ ["A","Understand the problem","What is happening? Who is involved? Which facts in the situation matter?",s=>s.solution.problem],
+ ["B","Identify the concept","Which civics concept, type of citizen or kind of democracy applies? Why is it relevant?",s=>s.solution.concepts],
+ ["C","Apply it","Connect the facts to the definition or features of the concept. Do not just write a definition.",s=>s.solution.apply],
+ ["D","Recommend an action","What should the person or community do? What would a good result look like?",s=>s.solution.recs],
+ ["E","Justify your choice","Why is this the right answer? Mention any exceptions.",s=>[s.solution.just,...s.solution.mistakes.map(m=>"Common mistake: "+m)]]];
 function scGuided(s){
   const body=document.getElementById("scBody");
   if(scStage>=STAGES.length){scQuestions(s,{exam:false});return}
   const [L,title,prompt,get]=STAGES[scStage];
   body.innerHTML=`<div class="card stage">
-    <div class="stage-top">Stage ${L} of E · try it yourself first</div><h3>${title}</h3><p>${prompt}</p>
+    <div class="stage-top">Step ${L} of E · try it yourself first</div><h3>${title}</h3><p>${prompt}</p>
     <label for="scNote">Your thinking (optional, not graded)</label>
     <textarea id="scNote" rows="4" placeholder="Write your answer for this stage…">${esc(scNotes[scStage]||"")}</textarea>
     <div class="btnrow"><button class="b alt" id="scHint">💡 Show hint</button><button class="b alt" id="scRev">👁 Reveal explanation</button></div>
@@ -269,11 +269,11 @@ function scFinish(s,answers,o){
     <p>${verdict}</p><p class="muted">Time: ${Math.floor(secs/60)}m ${secs%60}s · ${grades.filter(g=>g.status==="unanswered").length} unanswered · written answers are not in the score (self-assess below)</p>
     ${s.questions.map((q,i)=>qFeedback(q,answers[i],grades[i],"Q"+(i+1))).join("")}
     <div class="card solution"><h3>✅ Recommended solution</h3>
-      <b>1. Problem identification</b>${li(sl.problem)}
-      <b>2. Concepts / models that apply</b>${li(sl.concepts)}
-      <b>3. Model application breakdown</b>${li(sl.apply)}
-      <b>4. Recommended actions</b>${li(sl.recs)}
-      <b>5. Why this works</b><p>${esc(sl.just)}</p>
+      <b>1. What the situation is about</b>${li(sl.problem)}
+      <b>2. Concepts that apply</b>${li(sl.concepts)}
+      <b>3. Applying the concept to the facts</b>${li(sl.apply)}
+      <b>4. What to do / conclude</b>${li(sl.recs)}
+      <b>5. Why this is correct</b><p>${esc(sl.just)}</p>
       <b>6. Common mistakes</b>${li(sl.mistakes)}</div>
     <div class="card"><b>📖 Revise the related lessons</b><div class="relbtns">${s.related.map(id=>`<button class="chip" data-t="${id}">${esc(topicTitle(id))}</button>`).join("")}</div></div>
     <div class="btnrow"><button class="b" id="scNextSc">Next scenario →</button><button class="b alt" id="scRetry">Try this one again</button><button class="b alt" id="scToList">All scenarios</button></div></div>`;

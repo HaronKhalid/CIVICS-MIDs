@@ -1,5 +1,5 @@
 /* ==========================================================
-   Data Science Mids Guide - styles
+   Civics Notes - styles
    1. Theme colours   2. Base text   3. Header + navigation
    4. Home            5. Topics (accordion)   6. Content blocks
    7. Practice tools  8. Quiz / flashcards    9. Mobile   10. Print
@@ -238,6 +238,12 @@ button:disabled,select:disabled{opacity:.5;cursor:not-allowed}
 ul.plain{list-style:none;padding:0;margin:8px 0}ul.plain li{margin:4px 0}
 .sc-lead{color:var(--muted);margin:0 0 10px}
 .sc-filters .row>div{min-width:150px}
+.sc-filters input,.sc-filters select,#quiz select,#quiz input[type=text],#cards select{width:100%}
+#quiz label{display:block;margin:12px 0 4px;font-weight:600;font-size:.95rem}
+#quiz .muted,#quiz p{line-height:1.6}
+.sc-lead,.sc-home p{line-height:1.65}
+.sc-filters .row{margin-top:10px}
+.sc-filters label{display:block;margin:0 0 4px;font-weight:600;font-size:.95rem}
 .tagnote{margin:10px 0 0}
 .sc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-top:12px}
 .sc-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;display:flex;flex-direction:column}
