@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Civics &amp; Community Engagement Notes</title>
+<meta name="description" content="Civics and Community Engagement study notes: clear headings with details, Urdu summaries, scenarios, quizzes and flashcards.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/reading.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <div class="logo">Civics <span>Notes</span></div>
+    <nav class="tabs" id="tabs" aria-label="Main"></nav>
+    <span class="spacer"></span>
+    <span id="ptop">0% done</span>
+    <div class="size-grp" role="group" aria-label="Text size">
+      <button class="size-btn" id="sizeDown" aria-label="Smaller text" title="Smaller text">A−</button>
+      <button class="size-btn" id="sizeUp" aria-label="Larger text" title="Larger text">A+</button>
+    </div>
+    <button class="icon-btn" id="themeBtn" title="Dark / light mode" aria-label="Switch dark or light mode">🌓</button>
+  </div>
+  <div class="pbar"><i id="pfill"></i></div>
+  <div class="chapbar" id="chapbar"></div>
+</header>
+
+<main>
+
+<!-- ============================ HOME ============================ -->
+<section class="page" id="home">
+  <div class="hero">
+    <h1>Civics &amp; Community Engagement</h1>
+    <p>Clear notes with a heading for every idea and the details right under it. Includes Urdu summaries, real-life scenarios, quizzes and flashcards. Use <b>A+</b> at the top to make the text bigger.</p>
+    <button class="b btn-big" id="continueBtn">▶ Start reading</button>
+  </div>
+
+  <div id="homeScen"></div>
+
+  <h2>📚 Topics</h2>
+  <div class="chap-grid" id="chapCards"></div>
+
+  <h2>✍️ Practise and revise</h2>
+  <div class="practice-grid">
+    <button class="chap-card" data-go="scenarios"><div class="t">🧩 Scenarios</div><div class="s">Real-life situations to apply the concepts</div></button>
+    <button class="chap-card" data-go="quiz"><div class="t">✍️ Quiz</div><div class="s">Quick, scenario and mock exam modes</div></button>
+    <button class="chap-card" data-go="cards"><div class="t">🃏 Flashcards</div><div class="s">Quick revision of all terms</div></button>
+    <button class="chap-card" data-go="sheet"><div class="t">📄 Cheat sheet</div><div class="s">All key lists on one page</div></button>
+  </div>
+
+  <details class="fold"><summary>📅 2-day study plan</summary><div>
+    <p><b>Day 1</b></p><ul>
+      <li>Topic 1: Civics (meaning, origin, importance, key concepts)</li>
+      <li>Topic 2: Citizenship (definitions, types, rights, responsibilities, principles)</li>
+      <li>Do the scenarios for Topics 1 and 2</li></ul>
+    <p><b>Day 2</b></p><ul>
+      <li>Topic 3: Civic and community engagement</li>
+      <li>Topic 4: Democracy · Topic 5: Modern society and citizenship</li>
+      <li>Finish with scenarios, flashcards and a full mock exam</li></ul></div></details>
+
+  <details class="fold"><summary>🎯 How to study with this site</summary><div><ul>
+    <li>Each topic has lessons. Each lesson has <b>headings</b>, and the details are under each heading.</li>
+    <li>Read the <b>“In one line”</b> box first, then the details, then the green <b>Urdu summary</b>.</li>
+    <li>Use the <b>“In this topic”</b> buttons to jump to a lesson.</li>
+    <li>Press <b>“I have learned this”</b> to track your progress.</li>
+    <li>Try <b>Scenarios</b> to practise answering like in the exam.</li></ul></div></details>
+
+  <details class="fold"><summary>🗂️ All lessons checklist</summary><div class="cov" id="covmap"></div></details>
+
+  <div class="card"><b>Your progress:</b> <span id="ptext">0%</span><br>
+    <button class="b alt" id="resetP" style="margin-top:10px">Reset progress</button></div>
+  <div class="warn">Source: Lecture 1 handout (HUM208) and the course book pages on civics, citizenship, civic engagement, democracy and modern society that you added. Page 1 of the book and the end of the essay-question list were not in the files, so those parts are not covered.</div>
+</section>
+
+<!-- ============================ TOPIC 1 ============================ -->
+<section class="page" id="c1">
+  <h1>Civics: meaning and importance</h1>
+  <p>What civics is, where it comes from, why it matters and its key concepts.</p>
+
+  <article class="topic" data-id="c1-1" data-title="What is civics?">
+    <h3>What is civics?</h3>
+    <div class="short">Civics is the study of the <b>rights, duties and responsibilities</b> of citizenship.</div>
+    <h4>Definition</h4>
+    <p>Civics is the study of the rights, duties and responsibilities of citizenship. It includes understanding <b>how government operates</b>, <b>how laws are created</b> and <b>how citizens can actively participate</b> in the democratic process.</p>
+    <h4>Civics education</h4>
+    <p>Civics education helps individuals become <b>informed, responsible citizens</b> who can contribute to their communities and to society at large.</p>
+    <h4>What civics teaches</h4>
+    <ul><li>What your <b>rights</b> are.</li><li>What your <b>duties and responsibilities</b> are.</li><li>How the <b>government and laws</b> work.</li><li>How you can <b>take part</b> in public life.</li></ul>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>شہریات (Civics) شہری کے حقوق، فرائض اور ذمہ داریوں کا مطالعہ ہے۔ اس سے ہمیں پتا چلتا ہے کہ حکومت کیسے کام کرتی ہے، قانون کیسے بنتے ہیں اور ایک شہری جمہوری عمل میں کیسے حصہ لے سکتا ہے۔</div>
+  </article>
+
+  <article class="topic" data-id="c1-2" data-title="Origin and development of civics">
+    <h3>Origin and development of civics</h3>
+    <div class="short">Civics began with small <b>city-states</b> and direct democracy; today it covers <b>national and global</b> concerns.</div>
+    <h4>Humans are social beings</h4>
+    <p>People flourish in communities. The classical idea (associated with the Greek philosopher Aristotle) is that individuals reach their full potential through <b>cooperation and exchange within a society</b>.</p>
+    <h4>Ancient Greek and Roman city-states</h4>
+    <ul><li>The city-state, or <b>“polis”</b>, was the centre of civilised life.</li><li>Each city-state was an independent political entity with its own culture, social traditions and government.</li><li>Transport and communication were limited, so contact between city-states was minimal.</li><li>So the study of civics was <b>limited to the immediate concerns</b> of life within the city-state.</li></ul>
+    <h4>Direct democracy in the Greek period</h4>
+    <p>Citizens <b>took part directly</b> in decision-making instead of electing representatives to do it for them.</p>
+    <h4>The modern period</h4>
+    <ul><li>Societies became larger and more complex; citizens now live in larger political units like <b>countries</b> made up of many cities, towns and villages.</li><li>A citizen's relationships and responsibilities have grown beyond the local community to include <b>national and even global</b> concerns.</li><li>Civics now helps citizens understand this complex world by promoting <b>values, norms and understanding</b> of current social and political challenges.</li></ul>
+    <div class="scroll"><table><tr><th></th><th>Ancient (city-state)</th><th>Modern (country)</th></tr>
+     <tr><td><b>Size</b></td><td>small, independent city-states</td><td>large countries of many cities, towns, villages</td></tr>
+     <tr><td><b>Decisions</b></td><td>direct democracy: citizens decide themselves</td><td>mostly through elected representatives</td></tr>
+     <tr><td><b>Concern</b></td><td>immediate local life of the city-state</td><td>local, national and global concerns</td></tr></table></div>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>قدیم یونان میں چھوٹی چھوٹی شہری ریاستیں (polis) تھیں اور لوگ براہِ راست فیصلوں میں حصہ لیتے تھے۔ آج ملک بہت بڑے ہیں، اس لیے ہم نمائندے چنتے ہیں اور شہری کی ذمہ داریاں مقامی سے بڑھ کر قومی اور عالمی سطح تک پہنچ گئی ہیں۔</div>
+  </article>
+
+  <article class="topic" data-id="c1-3" data-title="Significance of civics (7 reasons)">
+    <h3>Significance of civics (7 reasons)</h3>
+    <div class="short">Civics shapes <b>informed, responsible individuals</b> who contribute to their community and country.</div>
+    <div class="pts">
+      <div class="pt"><span class="n">1</span><div><b>Flow of Information</b><p>Civics educates citizens about their fundamental rights and duties, so they understand how society works. By spreading information about laws, rights and responsibilities it keeps citizens informed and engaged.</p></div></div>
+      <div class="pt"><span class="n">2</span><div><b>Understanding Rights and Responsibilities</b><p>Modern society is built on a balance between what citizens are entitled to (rights) and what they are expected to do (responsibilities). Civics promotes a culture of accountability and respect for the law.</p></div></div>
+      <div class="pt"><span class="n">3</span><div><b>Political Participation</b><p>Civics encourages active participation in political life: voting in elections, understanding government policies and staying informed about current issues. In a democracy, citizens are the foundation of political authority.</p></div></div>
+      <div class="pt"><span class="n">4</span><div><b>Global Awareness</b><p>Civics expands understanding beyond one's own country, makes people aware of global issues and fosters international cooperation. It helps people think about how their actions affect others around the globe.</p></div></div>
+      <div class="pt"><span class="n">5</span><div><b>Comprehension of Economic Issues</b><p>Economic issues shape societies. Civics educates people about their economic rights and responsibilities and the broader economic principles that affect their communities. It helps people adopt balanced economic values and avoid unethical practices.</p></div></div>
+      <div class="pt"><span class="n">6</span><div><b>Character Building</b><p>A main goal of civics is to build strong character through values such as honesty, fairness, tolerance and integrity. These civic virtues help create a society of responsible, ethical citizens.</p></div></div>
+      <div class="pt"><span class="n">7</span><div><b>Community Welfare</b><p>Civics stresses community welfare and encourages citizens to work together on problems like poverty, unemployment and healthcare. Governments cannot address every issue alone; citizens must take responsibility for their communities' well-being through volunteerism and social activism.</p></div></div>
+    </div>
+    <div class="key">Memory trick: <b>I-R-P-G-E-C-W</b> = Information · Rights and responsibilities · Participation · Global awareness · Economic issues · Character · Welfare.</div>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>شہریات ہمیں معلومات دیتی ہے، حقوق و ذمہ داریاں سکھاتی ہے، سیاسی شرکت پر ابھارتی ہے، عالمی آگاہی دیتی ہے، معاشی مسائل کی سمجھ دیتی ہے، کردار سازی کرتی ہے اور معاشرتی فلاح کے لیے مل کر کام کرنا سکھاتی ہے۔</div>
+  </article>
+
+  <article class="topic" data-id="c1-4" data-title="Key concepts in civics">
+    <h3>Key concepts in civics</h3>
+    <div class="short">Five core ideas: <b>citizenship, democracy, rule of law, public participation, civic virtue</b>.</div>
+    <div class="pts">
+      <div class="pt"><span class="n">1</span><div><b>Citizenship</b><p>The rights, responsibilities and duties of individuals within a society. It includes participation in governance, obeying laws and contributing to the welfare of the community.</p></div></div>
+      <div class="pt"><span class="n">2</span><div><b>Democracy</b><p>A form of government in which power is vested in the people, either directly or through elected representatives. It stresses political participation, rule of law and protection of individual rights.</p></div></div>
+      <div class="pt"><span class="n">3</span><div><b>Rule of Law</b><p>The principle that all members of society, including government officials, are subject to the law. It ensures fairness, equality and justice.</p></div></div>
+      <div class="pt"><span class="n">4</span><div><b>Public Participation</b><p>The process by which individuals take part in decision-making in society. It includes voting, policy discussions and community activism.</p></div></div>
+      <div class="pt"><span class="n">5</span><div><b>Civic Virtue</b><p>Developing the habits essential for the success of a democratic society, including honesty, responsibility and respect for others.</p></div></div>
+    </div>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>شہریت، جمہوریت، قانون کی حکمرانی (سب پر قانون لاگو، حکومتی افراد پر بھی)، عوامی شرکت اور شہری خوبیاں (ایمانداری، ذمہ داری، دوسروں کی عزت): یہ شہریات کے پانچ بنیادی تصورات ہیں۔</div>
+  </article>
+
+  <div class="card"><b>📝 Exam questions (Topic 1)</b>
+    <details><summary>Define civics and explain its importance as a branch of social sciences.</summary>Civics is the study of the rights, duties and responsibilities of citizenship, including how government operates and how citizens participate. Importance: flow of information, understanding rights and responsibilities, political participation, global awareness, comprehension of economic issues, character building and community welfare.</details>
+    <details><summary>Discuss the origin and development of civics.</summary>Humans are social beings who flourish in communities. In Greek and Roman city-states (polis) civics was limited to the concerns of the city-state and direct democracy was common. As societies grew into countries, citizens' responsibilities widened to national and global concerns and civics now promotes values, norms and understanding of current challenges.</details>
+    <details><summary>Identify the key concepts of civics.</summary>Citizenship, democracy, rule of law, public participation and civic virtue, each with its definition.</details>
+  </div>
+</section>
+
+<!-- ============================ TOPIC 2 ============================ -->
+<section class="page" id="c2">
+  <h1>Citizenship</h1>
+  <p>What citizenship means, who is a citizen, its types, rights, responsibilities and principles.</p>
+
+  <article class="topic" data-id="c2-1" data-title="Conceptual understanding of citizenship">
+    <h3>Conceptual understanding of citizenship</h3>
+    <div class="short">Citizenship = <b>formal membership of a nation</b>, with <b>rights</b> in return for <b>obligations</b>.</div>
+    <h4>Membership and rights</h4>
+    <p>Citizenship is the formal acknowledgment of an individual's membership in a nation. It gives specific rights, including the ability to <b>vote</b> and the assurance of <b>legal protection</b>.</p>
+    <h4>Obligations</h4>
+    <p>Alongside the rights, citizenship involves obligations such as <b>obeying laws</b>, <b>paying taxes</b> and, in some cases, <b>military service</b>.</p>
+    <h4>A two-way relationship</h4>
+    <p>It is a dynamic relationship between the individual and the state, marked by <b>mutual loyalty in exchange for rights and protection</b>.</p>
+    <h4>Active engagement</h4>
+    <p>It also means active engagement in the community: taking part in political, social and economic life, fulfilling civic responsibilities and contributing to society through public service and community involvement.</p>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>شہریت کا مطلب کسی ملک کی باقاعدہ رکنیت ہے۔ اس کے بدلے شہری کو حقوق اور تحفظ ملتا ہے اور اس سے قانون ماننے اور ٹیکس دینے جیسی ذمہ داریاں نبھانے کی توقع کی جاتی ہے۔</div>
+  </article>
+
+  <article class="topic" data-id="c2-2" data-title="Definitions of citizenship">
+    <h3>Definitions of citizenship</h3>
+    <div class="short">Four scholars: <b>Marshall, Miliband, Miller, Kymlicka</b>. Learn one key idea each.</div>
+    <blockquote class="def"><cite>T. H. Marshall</cite><p>“Citizenship is a status bestowed on those who are full members of a community. All who possess the status are equal with respect to the rights and duties with which the status is endowed.”</p></blockquote>
+    <p><b>Key idea:</b> status, equality of rights and duties.</p>
+    <blockquote class="def"><cite>Ralph Miliband</cite><p>“Citizenship is the bond that unites people with the state, giving them both rights and duties, and making them active participants in the civic life of the political community.”</p></blockquote>
+    <p><b>Key idea:</b> a bond with the state; active participants.</p>
+    <blockquote class="def"><cite>David Miller</cite><p>“Citizenship is the set of rights and obligations that gives individuals membership in a political community, offering them protection by the state and requiring them to contribute to its wellbeing.”</p></blockquote>
+    <p><b>Key idea:</b> rights and obligations; protection and contribution.</p>
+    <blockquote class="def"><cite>Will Kymlicka</cite><p>“Citizenship is a relationship between an individual and a political community in which the individual participates actively in democratic governance while enjoying protection of their rights and freedoms.”</p></blockquote>
+    <p><b>Key idea:</b> relationship; active participation in democratic governance.</p>
+  </article>
+
+  <article class="topic" data-id="c2-3" data-title="Classification of citizens: natural-born and naturalized">
+    <h3>Classification of citizens: natural-born and naturalized</h3>
+    <div class="short">A citizen is either <b>natural-born</b> (citizen automatically at birth) or <b>naturalized</b> (becomes a citizen later through a legal process).</div>
+    <div class="compare">
+      <div><h5>1. Natural-born citizen</h5>
+        <p>Acquires citizenship <b>automatically at birth</b>: by being born on the country's territory, or through parentage (inherited from one or both citizen parents), whatever the place of birth.</p>
+        <ul><li>Citizenship is automatic at birth.</li><li>No legal or government process is needed to acquire it.</li><li>Rights and responsibilities are usually granted from birth.</li><li>In many countries only natural-born citizens can hold the highest political offices, such as the presidency in the U.S.</li></ul></div>
+      <div><h5>2. Naturalized citizen</h5>
+        <p>Acquires citizenship <b>after birth</b> through a legal process called <b>naturalization</b>.</p>
+        <ul><li>Granted after completing the legal naturalization process.</li><li>May need to meet residency requirements (living in the country for some years), pass language tests and show knowledge of the country's history and laws.</li><li>Often involves showing good moral character and taking an <b>oath of allegiance</b>.</li><li>Usually has the same rights and responsibilities as natural-born citizens, though in some countries there are limits on certain offices (for example the U.S. presidency).</li></ul></div>
+    </div>
+    <div class="scroll"><table><tr><th></th><th>Natural-born</th><th>Naturalized</th></tr>
+     <tr><td><b>When</b></td><td>at birth</td><td>after birth</td></tr>
+     <tr><td><b>How</b></td><td>automatically (territory or parentage)</td><td>legal naturalization process</td></tr>
+     <tr><td><b>Requirements</b></td><td>none</td><td>residency, tests, good character, oath of allegiance</td></tr>
+     <tr><td><b>Top offices</b></td><td>eligible (e.g. U.S. presidency)</td><td>may face restrictions in some countries</td></tr></table></div>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>پیدائشی شہری وہ ہے جسے پیدائش کے وقت خود بخود شہریت مل جائے (ملک میں پیدا ہو کر یا والدین سے)۔ نیچرلائزڈ شہری وہ ہے جو بعد میں قانونی عمل (رہائش، ٹیسٹ، حلف) پورا کر کے شہریت حاصل کرے۔</div>
+  </article>
+
+  <article class="topic" data-id="c2-4" data-title="Types of citizenship (9 types)">
+    <h3>Types of citizenship (9 types)</h3>
+    <div class="short">Citizenship is more than a passport or following laws: today it has <b>nine types</b>, from active to inclusive.</div>
+    <div class="pts">
+      <div class="pt"><span class="n">1</span><div><b>Active citizenship</b><p>Practical participation in societal and community efforts; going beyond legal duties to help society through civic engagement, volunteering and advocacy.</p><ul><li>Taking initiative in community projects.</li><li>Advocating for social justice or environmental causes.</li><li>Engaging in public service and civic discussions.</li></ul></div></div>
+      <div class="pt"><span class="n">2</span><div><b>Digital citizenship</b><p>The role individuals play in the online world: using technology responsibly, joining online discussions and advocating for issues through digital platforms.</p><ul><li>Ethical online behaviour, such as avoiding cyberbullying.</li><li>Online activism, from petitions to social media campaigns.</li><li>Staying informed on global and local issues through digital resources.</li></ul></div></div>
+      <div class="pt"><span class="n">3</span><div><b>Global citizenship</b><p>A sense of responsibility toward the global community; seeing oneself as part of a larger world and acting on international challenges like climate change, human rights and global inequality.</p><ul><li>Advocating for global issues such as poverty reduction and environmental sustainability.</li><li>Taking part in international collaborations and global advocacy.</li><li>Promoting peace and cultural understanding across borders.</li></ul></div></div>
+      <div class="pt"><span class="n">4</span><div><b>Ecological citizenship</b><p>Focuses on the individual's role in protecting and sustaining the natural environment through sustainable practices and conservation.</p><ul><li>Eco-friendly practices such as recycling and reducing carbon emissions.</li><li>Supporting policies and movements that protect natural resources.</li><li>Taking part in environmental activism and conservation efforts.</li></ul></div></div>
+      <div class="pt"><span class="n">5</span><div><b>Corporate citizenship</b><p>The ethical responsibilities of businesses as members of society. Corporations are expected to address social, economic and environmental issues and contribute positively to their communities.</p><ul><li>Implementing corporate social responsibility (CSR) initiatives.</li><li>Ensuring ethical business practices and transparency.</li><li>Committing to sustainability and philanthropy.</li></ul></div></div>
+      <div class="pt"><span class="n">6</span><div><b>Passive citizenship</b><p>Limited or minimal engagement in civic activities. These individuals fulfil basic legal duties such as paying taxes but do not actively take part in civic or political matters.</p><ul><li>Minimal or sporadic voting.</li><li>Limited involvement in community or public affairs.</li><li>Focus on personal or private concerns rather than broader societal issues.</li></ul></div></div>
+      <div class="pt"><span class="n">7</span><div><b>Economic citizenship</b><p>Participation in the economic system as employees, consumers and entrepreneurs; emphasises financial accountability and awareness of economic policies and their societal impact.</p><ul><li>Contributing to the economy through employment or entrepreneurship.</li><li>Meeting financial obligations like paying taxes.</li><li>Advocating for fair economic policies and labour rights.</li></ul></div></div>
+      <div class="pt"><span class="n">8</span><div><b>Informed citizenship</b><p>Being well educated on contemporary issues, government policies and societal challenges, so decisions are thoughtful and based on facts.</p><ul><li>Staying informed on political and social developments.</li><li>Engaging with credible information sources.</li><li>Taking part in thoughtful discussions and debates.</li></ul></div></div>
+      <div class="pt"><span class="n">9</span><div><b>Inclusive citizenship</b><p>Ensures everyone, regardless of background or identity, has equal rights and opportunities to take part in society; promotes equity, social justice and non-discrimination.</p><ul><li>Advocating for marginalized and underrepresented groups.</li><li>Promoting policies that encourage equality and inclusion.</li><li>Supporting accessibility and non-discriminatory practices in all areas of public life.</li></ul></div></div>
+    </div>
+    <div class="key">Memory trick: <b>A-D-G-E-C-P-E-I-I</b> = Active · Digital · Global · Ecological · Corporate · Passive · Economic · Informed · Inclusive.</div>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>فعال شہری عملی طور پر معاشرے کی بہتری میں حصہ لیتا ہے، جبکہ غیر فعال شہری صرف بنیادی قانونی فرائض (جیسے ٹیکس) ادا کرتا ہے مگر شرکت نہیں کرتا۔ ڈیجیٹل شہری آن لائن ذمہ داری سے پیش آتا ہے، عالمی شہری دنیا کے مسائل میں دلچسپی لیتا ہے، ماحولیاتی شہری قدرتی ماحول کی حفاظت کرتا ہے اور کارپوریٹ شہری سے مراد وہ ادارے ہیں جو سماجی ذمہ داری ادا کریں۔</div>
+    <button class="b alt" data-go="scenarios">🧩 Practise the types in Scenarios</button>
+  </article>
+
+  <article class="topic" data-id="c2-5" data-title="Rights of citizenship">
+    <h3>Rights of citizenship</h3>
+    <div class="short">A <b>right</b> is something the citizen <b>receives</b>: five key rights.</div>
+    <div class="pts">
+      <div class="pt"><span class="n">1</span><div><b>Freedom of expression</b><p>The right to express opinions without government censorship or retaliation.</p></div></div>
+      <div class="pt"><span class="n">2</span><div><b>Right to vote</b><p>The right to take part in democratic elections and choose representatives.</p></div></div>
+      <div class="pt"><span class="n">3</span><div><b>Right to a fair trial</b><p>Protection against arbitrary detention and access to due process under the law.</p></div></div>
+      <div class="pt"><span class="n">4</span><div><b>Freedom of assembly</b><p>The right to gather peacefully for protests, discussions or social movements.</p></div></div>
+      <div class="pt"><span class="n">5</span><div><b>Right to education</b><p>Access to education as a fundamental human right, to ensure equal opportunities.</p></div></div>
+    </div>
+  </article>
+
+  <article class="topic" data-id="c2-6" data-title="Responsibilities of citizenship">
+    <h3>Responsibilities of citizenship</h3>
+    <div class="short">A <b>responsibility</b> is something the citizen <b>must do</b>: five key responsibilities.</div>
+    <div class="pts">
+      <div class="pt"><span class="n">1</span><div><b>Obeying laws</b><p>Following the legal framework ensures order and security in society.</p></div></div>
+      <div class="pt"><span class="n">2</span><div><b>Paying taxes</b><p>Funding public services and infrastructure through taxation.</p></div></div>
+      <div class="pt"><span class="n">3</span><div><b>Serving on a jury</b><p>Taking part in the judicial system when called upon.</p></div></div>
+      <div class="pt"><span class="n">4</span><div><b>Participating in the democratic process</b><p>Staying informed, voting in elections and joining civic discussions.</p></div></div>
+      <div class="pt"><span class="n">5</span><div><b>Defending the country</b><p>Contributing to national defence when required, including military service or civil support.</p></div></div>
+    </div>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>حق وہ ہے جو شہری کو ملتا ہے (ووٹ، اظہارِ رائے، منصفانہ مقدمہ، پُرامن اجتماع، تعلیم)؛ ذمہ داری وہ ہے جو شہری نے ادا کرنی ہے (قانون پر عمل، ٹیکس، جیوری میں خدمت، جمہوری عمل میں شرکت، ملک کا دفاع)۔</div>
+  </article>
+
+  <article class="topic" data-id="c2-7" data-title="Principles of citizenship">
+    <h3>Principles of citizenship</h3>
+    <div class="short">Five principles: <b>equality, rule of law, participation, responsibility, liberty</b>.</div>
+    <div class="pts">
+      <div class="pt"><span class="n">1</span><div><b>Equality</b><p>Ensures all citizens are treated fairly and have equal opportunities.</p></div></div>
+      <div class="pt"><span class="n">2</span><div><b>Rule of law</b><p>No one is above the law, and everyone is subject to the same legal standards.</p></div></div>
+      <div class="pt"><span class="n">3</span><div><b>Participation</b><p>Encourages citizens to take part in governance through voting, public discussion and community initiatives.</p></div></div>
+      <div class="pt"><span class="n">4</span><div><b>Responsibility</b><p>Highlights the duty of individuals to contribute positively to society.</p></div></div>
+      <div class="pt"><span class="n">5</span><div><b>Liberty</b><p>Protects the freedom of individuals to live as they choose, within the limits of the law.</p></div></div>
+    </div>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>مساوات، قانون کی حکمرانی، شرکت، ذمہ داری اور آزادی (قانون کی حدود میں): یہ شہریت کے پانچ اصول ہیں۔</div>
+  </article>
+
+  <div class="card"><b>📝 Exam questions (Topic 2)</b>
+    <details><summary>Discuss the different types of citizenship. How does each type influence an individual's engagement with society and government?</summary>Active, digital, global, ecological, corporate, passive, economic, informed and inclusive citizenship. Explain each in one or two lines with its main features (see lesson 4). For example: active citizens volunteer and advocate; passive citizens only meet basic legal duties; digital citizens behave ethically online.</details>
+    <details><summary>Differentiate natural-born and naturalized citizens.</summary>Natural-born: citizenship automatically at birth by territory or parentage, no legal process. Naturalized: citizenship after birth through a legal process (residency, tests, good character, oath of allegiance); usually the same rights, with limits on some offices in some countries.</details>
+    <details><summary>List the rights and responsibilities of citizens.</summary>Rights: freedom of expression, right to vote, right to a fair trial, freedom of assembly, right to education. Responsibilities: obeying laws, paying taxes, serving on a jury, participating in the democratic process, defending the country.</details>
+    <details><summary>State the principles of citizenship.</summary>Equality, rule of law, participation, responsibility and liberty.</details>
+  </div>
+</section>
+
+<!-- ============================ TOPIC 3 ============================ -->
+<section class="page" id="c3">
+  <h1>Civic and community engagement</h1>
+  <p>What engagement means, who defined it, why it matters, how to take part and what gets in the way.</p>
+
+  <article class="topic" data-id="c3-1" data-title="What is civic engagement?">
+    <h3>What is civic engagement?</h3>
+    <div class="short">Civic engagement = <b>“the interactions of citizens with their society and their government”</b>.</div>
+    <h4>Meaning</h4>
+    <p>Civic engagement is the involvement of individuals in activities that address <b>issues of public concern</b>. It includes voting, volunteering, attending public meetings and advocating for policy changes. It fosters a sense of community responsibility and makes sure individuals play an active role in shaping society.</p>
+    <h4>A term with no single definition</h4>
+    <p>In social and political science the term has no single definition. It is also used interchangeably with <b>civic participation</b>. It can be described as regular citizens' participation in community life to improve living conditions for others.</p>
+    <h4>Purpose and examples</h4>
+    <p>Kinds of civic engagement differ in context, scope and aim. The most common purpose is to contribute to a community's <b>social, political or cultural life</b> to create meaningful change, for example through volunteering in education or environmental protection, taking part in election campaigns, or working on advocacy projects and charity events.</p>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>شہری شرکت کا مطلب عوامی مسائل کے حل میں حصہ لینا ہے: ووٹ دینا، رضاکارانہ کام کرنا، عوامی اجلاسوں میں جانا اور پالیسی میں تبدیلی کے لیے آواز اٹھانا۔ مختصراً: شہریوں کا اپنے معاشرے اور اپنی حکومت کے ساتھ تعامل۔</div>
+  </article>
+
+  <article class="topic" data-id="c3-2" data-title="Definitions of civic engagement">
+    <h3>Definitions of civic engagement</h3>
+    <div class="short">Three scholars: <b>Delli Carpini, Ehrlich, Van Benshoten</b>.</div>
+    <blockquote class="def"><cite>Michael Delli Carpini</cite><p>“Civic engagement includes both paid and unpaid forms of political activism, environmentalism and national service. It can include efforts to directly address an issue, work with others in a community to solve a problem, or interact with the institutions of representative democracy.”</p></blockquote>
+    <p><b>Key idea:</b> paid and unpaid activism; solve problems; interact with democratic institutions.</p>
+    <blockquote class="def"><cite>Thomas Ehrlich</cite><p>“Civic engagement means working to make a difference in the civic life of our communities and developing the combination of knowledge, skills, values and motivation to make that difference. It means promoting the quality of life in a community, through both political and non-political processes.”</p></blockquote>
+    <p><b>Key idea:</b> make a difference; knowledge + skills + values + motivation; political and non-political.</p>
+    <blockquote class="def"><cite>Van Benshoten</cite><p>“Civic engagement may be defined as the means by which an individual, through collective action, influences the larger civil society.”</p></blockquote>
+    <p><b>Key idea:</b> an individual, through collective action, influences civil society.</p>
+  </article>
+
+  <article class="topic" data-id="c3-3" data-title="Community engagement and related terms">
+    <h3>Community engagement and related terms</h3>
+    <div class="short">Community engagement, public participation, volunteerism and advocacy are <b>different but connected</b> ways of taking part.</div>
+    <div class="pts">
+      <div class="pt"><span class="n">1</span><div><b>Community engagement</b><p>Collaboration between individuals, organisations and institutions to improve the quality of life in a community. It stresses building partnerships and engaging citizens in meaningful, productive ways to address local and global challenges.</p></div></div>
+      <div class="pt"><span class="n">2</span><div><b>Public participation</b><p>The involvement of individuals and groups in the decision-making processes of government and other public institutions: attending public meetings, giving feedback on policies and joining public consultations.</p></div></div>
+      <div class="pt"><span class="n">3</span><div><b>Volunteerism</b><p>Offering time and services to others <b>without financial gain</b>. A key part of civic engagement, such as mentoring youth or joining community clean-up drives.</p></div></div>
+      <div class="pt"><span class="n">4</span><div><b>Advocacy</b><p>Supporting and arguing for a cause, policy or proposal: writing to elected officials, taking part in protests and using social media to raise awareness.</p></div></div>
+    </div>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>رضاکارانہ خدمت (بغیر مالی فائدے کے وقت دینا)، وکالت/آواز اٹھانا (کسی مقصد کی حمایت)، عوامی شرکت (حکومتی فیصلوں میں حصہ) اور کمیونٹی کی شمولیت (مل کر معیارِ زندگی بہتر کرنا): یہ سب شہری شرکت کی شکلیں ہیں۔</div>
+  </article>
+
+  <article class="topic" data-id="c3-4" data-title="Importance of civic engagement (7 reasons)">
+    <h3>Importance of civic engagement (7 reasons)</h3>
+    <div class="short">Civic engagement builds a <b>strong, vibrant and cohesive society</b>: it helps people contribute to the common good, build stronger communities and promote democracy and social justice.</div>
+    <div class="pts">
+      <div class="pt"><span class="n">1</span><div><b>Strengthening the communities</b><p>Brings people together to address local problems, improve public spaces and help those in need, through volunteerism or community activism. Engaged citizens create stronger, more resilient communities.</p></div></div>
+      <div class="pt"><span class="n">2</span><div><b>Promotion of democratic participation</b><p>Active involvement ensures democracy works effectively. Voting, advocacy and public forums give citizens a voice, hold elected officials accountable and make government actions reflect the will of the people.</p></div></div>
+      <div class="pt"><span class="n">3</span><div><b>Empowerment of citizens</b><p>Gives individuals the chance to contribute to positive change, develop leadership skills and connect with like-minded people. It also builds communication, problem-solving and organisational abilities.</p></div></div>
+      <div class="pt"><span class="n">4</span><div><b>Supporting social justice</b><p>Addresses inequalities and advocates for marginalized communities. Through activism, service and political participation, citizens can challenge systemic injustices and promote fairness, equality and inclusion.</p></div></div>
+      <div class="pt"><span class="n">5</span><div><b>Enhancing civic responsibility</b><p>Encourages citizens to take responsibility for the welfare of their communities. By working to improve local conditions, individuals develop a sense of shared responsibility and commitment to others' well-being, reinforcing the social fabric.</p></div></div>
+      <div class="pt"><span class="n">6</span><div><b>Construction of social networks</b><p>Builds strong networks and relationships among community members. These networks are the base for collaboration, support during crises and collective problem-solving, improving overall quality of life.</p></div></div>
+      <div class="pt"><span class="n">7</span><div><b>Government accountability</b><p>Citizens monitor government actions and policies so officials remain accountable. Through discussion, advocacy and activism they can push for transparency and reform, reducing corruption and inefficiency.</p></div></div>
+    </div>
+    <h4>Version in the Lecture 1 handout (5 points)</h4>
+    <ul><li><b>Strengthens democracy:</b> the government stays accountable and works effectively.</li><li><b>Builds stronger communities:</b> people work together on common challenges.</li><li><b>Empowers citizens:</b> gives individuals a voice on social and political issues.</li><li><b>Addresses social issues:</b> mobilises people against poverty, inequality and environmental problems.</li><li><b>Encourages civic responsibility:</b> a sense of civic duty fosters responsible citizenship.</li></ul>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>شہری شرکت سے جمہوریت مضبوط ہوتی ہے، حکومت جواب دہ رہتی ہے، لوگ بااختیار بنتے ہیں، سماجی انصاف کو فروغ ملتا ہے، ذمہ داری کا احساس بڑھتا ہے، سماجی تعلقات بنتے ہیں اور معاشرتی مسائل مل کر حل ہوتے ہیں۔</div>
+  </article>
+
+  <article class="topic" data-id="c3-5" data-title="Ways to engage in civic and community life">
+    <h3>Ways to engage in civic and community life</h3>
+    <div class="short">Five ways: <b>volunteering, advocacy, public meetings, community projects, political involvement</b>.</div>
+    <div class="pts">
+      <div class="pt"><span class="n">1</span><div><b>Volunteering</b><p>Giving time and effort to community projects, charities and social causes.</p></div></div>
+      <div class="pt"><span class="n">2</span><div><b>Advocacy</b><p>Supporting and promoting policies and causes through public campaigns, petitions and lobbying.</p></div></div>
+      <div class="pt"><span class="n">3</span><div><b>Attending public meetings</b><p>Taking part in discussions on local governance and policy-making.</p></div></div>
+      <div class="pt"><span class="n">4</span><div><b>Community projects</b><p>Joining initiatives such as environmental clean-ups, food drives and mentorship programmes.</p></div></div>
+      <div class="pt"><span class="n">5</span><div><b>Political involvement</b><p>Running for office, supporting candidates or joining political parties.</p></div></div>
+    </div>
+  </article>
+
+  <article class="topic" data-id="c3-6" data-title="Challenges to civic engagement">
+    <h3>Challenges to civic engagement</h3>
+    <div class="short">Four obstacles: <b>lack of awareness, political apathy, misinformation, barriers to participation</b>.</div>
+    <div class="pts">
+      <div class="pt"><span class="n">1</span><div><b>Lack of awareness</b><p>Many people do not know their civic rights and responsibilities, which leads to disengagement.</p></div></div>
+      <div class="pt"><span class="n">2</span><div><b>Political apathy</b><p>Some citizens feel disconnected from political processes and believe their participation makes no difference.</p></div></div>
+      <div class="pt"><span class="n">3</span><div><b>Misinformation</b><p>False or misleading information can influence public opinion and hinder effective civic engagement.</p></div></div>
+      <div class="pt"><span class="n">4</span><div><b>Barriers to participation</b><p>Economic, social or institutional obstacles can stop some groups from engaging fully in civic activities.</p></div></div>
+    </div>
+    <h4>Conclusion (Lecture 1)</h4>
+    <p>Civic and community engagement is essential for a just and democratic society. By understanding civic responsibilities and taking part in public life, individuals build stronger, more inclusive communities. Encouraging awareness, removing barriers to participation and building a culture of engagement ensures a better future for all.</p>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>رکاوٹیں: آگاہی کی کمی، سیاسی بے رغبتی (کہ میرے حصہ لینے سے کیا فرق پڑے گا)، غلط معلومات (افواہیں) اور معاشی، سماجی یا ادارہ جاتی رکاوٹیں۔</div>
+  </article>
+
+  <div class="card"><b>📝 Exam questions (Topic 3)</b>
+    <details><summary>Define civic engagement and explain its importance.</summary>Civic engagement is the interaction of citizens with their society and government: voting, volunteering, attending public meetings and advocating for change. Importance: strengthens communities, promotes democratic participation, empowers citizens, supports social justice, enhances civic responsibility, builds social networks and makes government accountable.</details>
+    <details><summary>Explain public participation, volunteerism and advocacy.</summary>Public participation: involvement in government decision-making (meetings, feedback, consultations). Volunteerism: giving time and services without financial gain. Advocacy: supporting and arguing for a cause, policy or proposal (letters, protests, social media).</details>
+    <details><summary>What challenges limit civic engagement?</summary>Lack of awareness, political apathy, misinformation and economic, social or institutional barriers.</details>
+  </div>
+</section>
+
+<!-- ============================ TOPIC 4 ============================ -->
+<section class="page" id="c4">
+  <h1>Democracy</h1>
+  <p>The concept of democracy, definitions, types and its relationship with citizenship.</p>
+
+  <article class="topic" data-id="c4-1" data-title="Understanding the concept of democracy">
+    <h3>Understanding the concept of democracy</h3>
+    <div class="short">Democracy is a political system based on the <b>participation and consent of the people</b>.</div>
+    <h4>Where authority comes from</h4>
+    <p>The authority of the government comes from the <b>will of the citizens</b>, who use their power either <b>directly or through elected representatives</b>.</p>
+    <h4>Core principles</h4>
+    <p>At its core democracy upholds <b>equality, freedom and justice</b>, so that every individual has an equal voice in decisions that affect their lives.</p>
+    <h4>What citizens can do</h4>
+    <ul><li>Vote, express their opinions freely and take part in public affairs without fear of repression.</li><li>Choose and hold leaders accountable through <b>regular, free and fair elections</b>.</li></ul>
+    <h4>Representation and rights</h4>
+    <ul><li><b>Representation</b> in government institutions makes sure diverse voices and interests are reflected in policy-making.</li><li>Democracy protects fundamental rights, including <b>freedom of speech, religion and association</b>.</li></ul>
+    <h4>Aim</h4>
+    <p>A just political environment where power is exercised <b>transparently and responsibly, in service of the public good</b>.</p>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>جمہوریت میں اقتدار کا سرچشمہ عوام ہیں، براہِ راست یا منتخب نمائندوں کے ذریعے۔ اس کی بنیاد مساوات، آزادی اور انصاف پر ہے اور اس میں آزاد و منصفانہ انتخابات، نمائندگی اور بنیادی حقوق کا تحفظ شامل ہیں۔</div>
+  </article>
+
+  <article class="topic" data-id="c4-2" data-title="Definitions of democracy">
+    <h3>Definitions of democracy</h3>
+    <div class="short">Four thinkers: <b>Dahl, Schumpeter, Dewey, Lincoln</b>.</div>
+    <blockquote class="def"><cite>Robert Dahl</cite><p>“Democracy is a system of governance that responds fully to all its citizens as political equals, allowing them full opportunity to participate in the life of the community and influence collective decisions.”</p></blockquote>
+    <p><b>Key idea:</b> citizens as political equals; full opportunity to participate.</p>
+    <blockquote class="def"><cite>Joseph Schumpeter</cite><p>“Democracy is that institutional arrangement for arriving at political decisions in which individuals acquire the power to decide by means of a competitive struggle for the people's vote.”</p></blockquote>
+    <p><b>Key idea:</b> competition for the people's vote.</p>
+    <blockquote class="def"><cite>John Dewey</cite><p>“Democracy is more than a form of government; it is primarily a mode of associated living, of conjoint communicated experience.”</p></blockquote>
+    <p><b>Key idea:</b> a way of living together, not only a government.</p>
+    <blockquote class="def"><cite>Abraham Lincoln</cite><p>“Democracy is the government of the people, by the people, for the people.”</p></blockquote>
+    <p><b>Key idea:</b> of, by and for the people (the most famous short definition).</p>
+  </article>
+
+  <article class="topic" data-id="c4-3" data-title="Types of democracy (5 types)">
+    <h3>Types of democracy (5 types)</h3>
+    <div class="short">Five types: <b>direct, representative, constitutional, liberal, participatory</b>.</div>
+    <div class="pts">
+      <div class="pt"><span class="n">1</span><div><b>Direct democracy</b><p>Citizens take part directly in decision-making, typically through referendums or assemblies. <b>Example:</b> ancient Athens, where eligible citizens voted directly on laws and policies.</p></div></div>
+      <div class="pt"><span class="n">2</span><div><b>Representative democracy</b><p>Citizens elect representatives who make decisions on their behalf. More common in modern, larger societies where direct participation in every decision is impractical. <b>Examples:</b> the United States, Pakistan and India.</p></div></div>
+      <div class="pt"><span class="n">3</span><div><b>Constitutional democracy</b><p>A form of representative democracy where the power of elected officials is <b>limited by a constitution</b>. The constitution ensures laws and government actions follow fundamental principles, such as protecting human rights and limiting governmental power.</p></div></div>
+      <div class="pt"><span class="n">4</span><div><b>Liberal democracy</b><p>A variant of representative democracy that emphasises <b>individual rights, rule of law and protection of freedoms</b>. The power of the majority is balanced by safeguarding the rights of minorities.</p></div></div>
+      <div class="pt"><span class="n">5</span><div><b>Participatory democracy</b><p>Encourages broader participation in decision-making <b>beyond elections</b>, promoting civic engagement and community involvement in governance. It stresses grassroots movements and public consultations.</p></div></div>
+    </div>
+    <div class="scroll"><table><tr><th>Type</th><th>Key feature</th><th>Example</th></tr>
+     <tr><td>Direct</td><td>citizens decide themselves (referendums, assemblies)</td><td>ancient Athens</td></tr>
+     <tr><td>Representative</td><td>elected representatives decide</td><td>U.S., Pakistan, India</td></tr>
+     <tr><td>Constitutional</td><td>power limited by a constitution</td><td>—</td></tr>
+     <tr><td>Liberal</td><td>individual rights; majority balanced by minority rights</td><td>—</td></tr>
+     <tr><td>Participatory</td><td>participation beyond elections; grassroots, consultations</td><td>—</td></tr></table></div>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>براہِ راست جمہوریت (قدیم ایتھنز)، نمائندہ جمہوریت (پاکستان، بھارت، امریکہ)، آئینی جمہوریت (اقتدار آئین کے تابع)، لبرل جمہوریت (انفرادی حقوق اور اقلیتوں کا تحفظ) اور شراکتی جمہوریت (انتخابات سے آگے عوامی مشاورت)۔</div>
+    <button class="b alt" data-go="scenarios">🧩 Practise the types in Scenarios</button>
+  </article>
+
+  <article class="topic" data-id="c4-4" data-title="Relationship between democracy and citizenship (9 points)">
+    <h3>Relationship between democracy and citizenship (9 points)</h3>
+    <div class="short">Democracy and citizenship <b>depend on each other</b>: citizens make democracy work, and democracy protects citizens' rights.</div>
+    <div class="pts">
+      <div class="pt"><span class="n">1</span><div><b>Citizenship as the foundation for democracy</b><p>Citizenship is the status that gives individuals rights and obligations in a political community, especially the entitlement to take part in the democratic process. Citizens are the key participants: they vote, run for office, join discussions and take part in civic activities. Without citizenship, individuals would lose the formal ways of influencing political choices, laws and policies.</p></div></div>
+      <div class="pt"><span class="n">2</span><div><b>Rights and obligations</b><p>In a democracy citizenship gives vital rights: vote, freedom of expression, assembly and equal protection under the law. It also brings responsibilities: adhering to laws, fulfilling tax obligations, serving on juries and contributing to collective welfare. Active citizenship is crucial for democracy to work.</p></div></div>
+      <div class="pt"><span class="n">3</span><div><b>Enhancement of community welfare</b><p>Democratic citizenship means being actively involved and well informed on political matters while using rights responsibly. This engagement shapes public policy and improves community welfare.</p></div></div>
+      <div class="pt"><span class="n">4</span><div><b>Participation and representation</b><p>Citizens should engage in governing their nation directly or through representatives. In a representative democracy they elect officials who advocate for their interests. Every individual has the right to take part on equal footing, which secures representation for everyone and prevents the marginalization of groups.</p></div></div>
+      <div class="pt"><span class="n">5</span><div><b>Citizenship as a mechanism for accountability</b><p>Citizens can challenge government actions through elections, protests and advocacy, especially when their interests are overlooked or officials are corrupt or misuse authority. This keeps governments tuned to the needs and aspirations of the people.</p></div></div>
+      <div class="pt"><span class="n">6</span><div><b>Education and awareness</b><p>Civic education fortifies democracy: a thriving democracy needs citizens who know their rights and duties. It equips people to make educated decisions in elections and join public discussions constructively. Active citizenship keeps people aware of social, political and economic matters.</p></div></div>
+      <div class="pt"><span class="n">7</span><div><b>Democracy enriches civic identity</b><p>The link between individuals and the state is built on equality, freedom and justice. This makes citizens proactive participants in the nation's social and political life and nurtures values such as tolerance, respect for others and dedication to the common good.</p></div></div>
+      <div class="pt"><span class="n">8</span><div><b>Empowerment and inclusion</b><p>Citizenship gives a voice in the democratic process, especially to marginalized groups. Inclusive citizenship lets all citizens, whatever their background, help shape policies. Feeling included fosters social cohesion and a sense of belonging.</p></div></div>
+      <div class="pt"><span class="n">9</span><div><b>Mutual reinforcement</b><p>Democracy and citizenship strengthen each other: a vibrant democracy encourages active citizenship, and engaged citizens sustain democratic institutions. The health of a democracy is often measured by the level of citizen involvement in governance.</p></div></div>
+    </div>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>شہریت کے بغیر جمہوریت میں شرکت ممکن نہیں اور جمہوریت کے بغیر شہری حقوق محفوظ نہیں رہتے۔ دونوں ایک دوسرے کو مضبوط کرتے ہیں؛ جمہوریت کی صحت کا اندازہ اکثر اس سے لگایا جاتا ہے کہ شہری حکومت کے معاملات میں کتنا حصہ لیتے ہیں۔</div>
+  </article>
+
+  <article class="topic" data-id="c4-5" data-title="Interdependence of democracy and citizenship">
+    <h3>Interdependence of democracy and citizenship</h3>
+    <div class="short">Both are <b>interdependent</b> for their survival and sustainability.</div>
+    <h4>The three links in the diagram</h4>
+    <div class="pts">
+      <div class="pt"><span class="n">1</span><div><b>Mutual reinforcement</b><p>A strong democracy builds active citizens; active citizens keep democracy strong.</p></div></div>
+      <div class="pt"><span class="n">2</span><div><b>Empowerment and inclusion</b><p>Citizens, including marginalized groups, get a voice; inclusion builds belonging and social cohesion.</p></div></div>
+      <div class="pt"><span class="n">3</span><div><b>Education and awareness</b><p>Civic education creates informed citizens who make good decisions.</p></div></div>
+    </div>
+    <h4>Conclusion</h4>
+    <p>The relationship between democracy and citizenship is vital for the health and sustainability of both. Citizenship provides the foundation for participation, while democracy creates an environment that respects and promotes citizens' rights and responsibilities. Understanding and nurturing this relationship helps societies move toward more inclusive, participatory and vibrant democracies that empower all citizens to contribute to the common good.</p>
+  </article>
+
+  <div class="card"><b>📝 Exam questions (Topic 4)</b>
+    <details><summary>Define democracy and describe its main types.</summary>Democracy is a system based on the participation and consent of the people (Lincoln: of, by and for the people). Types: direct, representative, constitutional, liberal and participatory, each with its feature and example.</details>
+    <details><summary>Explain the relationship between democracy and citizenship.</summary>Citizenship is the foundation of democracy; rights and obligations; community welfare; participation and representation; accountability; education and awareness; civic identity; empowerment and inclusion; mutual reinforcement.</details>
+    <details><summary>How can citizens hold governments accountable?</summary>Through elections, protests, advocacy and public discussion, especially when officials ignore people's interests or misuse authority.</details>
+  </div>
+</section>
+
+<!-- ============================ TOPIC 5 ============================ -->
+<section class="page" id="c5">
+  <h1>Modern society and citizenship</h1>
+  <p>The 14 characteristics that form the foundation of modern society, and how they shape citizenship.</p>
+
+  <article class="topic" data-id="c5-1" data-title="What is modern society?">
+    <h3>What is modern society?</h3>
+    <div class="short">Modern society = the characteristics, structures and dynamics that have developed <b>since the industrial revolution</b> and keep evolving.</div>
+    <p>The concept of modern society refers to the characteristics, structures and dynamics that have developed since the industrial revolution and continue to evolve in contemporary times. It reflects the social values and practices that shape people's lives today.</p>
+    <h4>The 14 foundations at a glance</h4>
+    <div class="scroll"><table><tr><th>1–7</th><th>8–14</th></tr>
+     <tr><td>1. Rule of law<br>2. Human rights and freedoms<br>3. Industrialization<br>4. Urbanization<br>5. Secularization<br>6. Bureaucracy<br>7. Democratic governance</td><td>8. Individualism and personal autonomy<br>9. Social mobility<br>10. Multiculturalism<br>11. Mass media<br>12. Scientific knowledge and technology<br>13. Social change<br>14. Ethical dilemmas</td></tr></table></div>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>جدید معاشرہ صنعتی انقلاب کے بعد پیدا ہونے والی خصوصیات، ڈھانچوں اور رجحانات کا نام ہے جو آج بھی بدل رہے ہیں۔ اس کی چودہ بنیادی خصوصیات ہیں۔</div>
+  </article>
+
+  <article class="topic" data-id="c5-2" data-title="Foundations 1–7">
+    <h3>Foundations 1–7</h3>
+    <div class="short">Rule of law · human rights · industrialization · urbanization · secularization · bureaucracy · democratic governance.</div>
+    <div class="pts">
+      <div class="pt"><span class="n">1</span><div><b>Rule of law</b><p>Modern societies rest on a legal framework that ensures justice, security and order. All citizens, regardless of status, are equally subject to the law. Citizens have rights (freedom of expression, voting) and responsibilities (obeying laws, paying taxes).</p></div></div>
+      <div class="pt"><span class="n">2</span><div><b>Human rights and freedoms</b><p>Universal human rights are upheld: freedom of speech, equality under the law and protection from discrimination. Civil liberties such as freedom of religion, expression and privacy are central.</p></div></div>
+      <div class="pt"><span class="n">3</span><div><b>Industrialization</b><p>A shift from agrarian to industrial and service-based economies. Automation and mechanization raised productivity and changed how goods are produced, and enabled the flow of goods, services and information across borders.</p></div></div>
+      <div class="pt"><span class="n">4</span><div><b>Urbanization</b><p>Movement of populations from rural areas to cities. It led to large cities and metropolitan areas (centres of economic activity, social interaction and cultural exchange) and the growth of infrastructure like transport, healthcare, education and housing.</p></div></div>
+      <div class="pt"><span class="n">5</span><div><b>Secularization and the decline of religious authority</b><p>A shift away from religious authority. Secular institutions, including governments, legal systems and education, dominate public life and decide on rational and scientific principles rather than religious doctrine.</p></div></div>
+      <div class="pt"><span class="n">6</span><div><b>Bureaucracy</b><p>Max Weber's idea of rationalization: modern societies value efficiency, predictability and bureaucracy. Public and private institutions use organised, rule-based administration, stressing order, control and efficiency in decision-making.</p></div></div>
+      <div class="pt"><span class="n">7</span><div><b>Democratic governance and political participation</b><p>A trademark of modern society: citizens take part in political decision-making through free and fair elections. Modern democracies rest on individual rights, political freedom and the rule of law.</p></div></div>
+    </div>
+  </article>
+
+  <article class="topic" data-id="c5-3" data-title="Foundations 8–14">
+    <h3>Foundations 8–14</h3>
+    <div class="short">Individualism · social mobility · multiculturalism · mass media · science and technology · social change · ethical dilemmas.</div>
+    <div class="pts">
+      <div class="pt"><span class="n">8</span><div><b>Individualism and personal autonomy</b><p>Personal autonomy and self-expression are highly valued. Individuals are encouraged to make choices about their lives, including careers, social roles and personal goals.</p></div></div>
+      <div class="pt"><span class="n">9</span><div><b>Social mobility</b><p>Greater potential for individuals to improve their socioeconomic status through merit, education and achievement, rather than being held by rigid social hierarchies.</p></div></div>
+      <div class="pt"><span class="n">10</span><div><b>Multiculturalism</b><p>Cultural pluralism: diverse ethnic, religious and linguistic groups coexist. It fosters inclusion and equality for all groups, enriches social interaction and has led to recognition of gender equality and other movements for civil rights and justice.</p></div></div>
+      <div class="pt"><span class="n">11</span><div><b>Mass media</b><p>Mass media and digital technology have transformed communication. Global connectivity lets information flow rapidly across borders, and social media platforms, the internet and digital communication reshape cultural dynamics and the spread of information.</p></div></div>
+      <div class="pt"><span class="n">12</span><div><b>Scientific knowledge and technological advancements</b><p>Modern societies are rooted in scientific knowledge and rational thinking; evidence and scientific principles inform decisions in healthcare, education and industry. Technology has transformed daily life but poses ethical dilemmas, such as the impact of AI and automation on jobs.</p></div></div>
+      <div class="pt"><span class="n">13</span><div><b>Social change</b><p>Modern societies are dynamic. Technology, economic development and shifts in political ideology drive rapid change, alongside challenges such as environmental sustainability, economic inequality and climate change.</p></div></div>
+      <div class="pt"><span class="n">14</span><div><b>Ethical dilemmas in modern society</b><p>Scientific and technological progress raises moral questions: data privacy, artificial intelligence, environmental degradation and genetic engineering. Balancing progress with ethics is a key challenge.</p></div></div>
+    </div>
+    <button class="b alt" data-go="scenarios">🧩 Practise the 14 foundations in Scenarios</button>
+  </article>
+
+  <article class="topic" data-id="c5-4" data-title="How modern society shapes citizenship (conclusion)">
+    <h3>How modern society shapes citizenship (conclusion)</h3>
+    <div class="short">Modern society gives citizens <b>rights and freedoms</b> and expects <b>duties</b> in return; citizenship is also <b>active participation</b>.</div>
+    <h4>Rights and obligations</h4>
+    <p>The relationship between modern society and citizenship is rooted in rights and responsibilities. With its foundations in the rule of law, democracy, human rights and individualism, modern society ensures legal protection and grants freedoms such as voting and expression. In return, citizens are expected to obey laws, pay taxes and take part in civic duties.</p>
+    <h4>Participation</h4>
+    <p>Modern societies encourage citizens to take an active part in political processes, influence decisions and hold officials accountable.</p>
+    <h4>Inclusion and global links</h4>
+    <p>Modern society promotes inclusion, diversity and social mobility, enriching citizenship. Through technology, mass media and global connectivity, citizens are more informed and engaged, and can address global challenges like environmental sustainability and economic inequality.</p>
+    <div class="key">Citizenship in modern society is <b>not only legal status</b> but also <b>active participation</b> in shaping the social, political and economic landscape, locally and globally.</div>
+    <div class="ur"><b class="t">اردو میں خلاصہ</b>جدید معاشرہ شہری کو قانونی تحفظ اور آزادیاں (ووٹ، اظہارِ رائے) دیتا ہے اور بدلے میں قانون پر عمل، ٹیکس اور شہری فرائض کی توقع رکھتا ہے۔ آج شہریت صرف قانونی حیثیت نہیں بلکہ سماجی، سیاسی اور معاشی زندگی میں فعال شرکت بھی ہے۔</div>
+  </article>
+
+  <div class="card"><b>📝 Exam questions (Topic 5)</b>
+    <details><summary>What is modern society? Explain its foundations.</summary>Modern society is the set of characteristics, structures and dynamics developed since the industrial revolution. Foundations: rule of law, human rights, industrialization, urbanization, secularization, bureaucracy, democratic governance, individualism, social mobility, multiculturalism, mass media, science and technology, social change and ethical dilemmas.</details>
+    <details><summary>How does modern society shape citizenship?</summary>It gives legal protection and freedoms and expects obligations (laws, taxes, civic duties); encourages political participation and accountability; promotes inclusion, diversity and mobility; and, through technology and media, helps citizens tackle global issues.</details>
+    <details><summary>Who proposed rationalization and bureaucracy?</summary>Max Weber: modern societies value efficiency, predictability and rule-based administration.</details>
+  </div>
+</section>
+
+<!-- ============================ SCENARIOS ============================ -->
+<section class="page" id="scenarios">
+  <h1>🧩 Scenarios</h1>
+  <div id="scBox"></div>
+</section>
+
+<!-- ============================ QUIZ ============================ -->
+<section class="page" id="quiz">
+  <h1>Practice Quiz</h1>
+  <p class="muted">Pick a mode, then answer. Practice modes explain each answer straight away. The mock exam explains only after you submit.</p>
+  <div class="card">
+    <div class="row">
+      <div><label for="qMode">Mode</label><select id="qMode">
+        <option value="quick">Quick Quiz</option><option value="scenario">Scenario Quiz</option><option value="mixed">Mixed Quiz</option><option value="chapter">Topic Practice</option><option value="mock">Full Mock Exam</option></select></div>
+      <div><label for="qCh">Topic</label><select id="qCh"><option value="all">All topics</option><option value="1">1. Civics: meaning and importance</option><option value="2">2. Citizenship</option><option value="3">3. Civic and community engagement</option><option value="4">4. Democracy</option><option value="5">5. Modern society and citizenship</option></select></div>
+    </div>
+    <p class="muted" id="qModeNote" style="margin:8px 0"></p>
+    <div class="row">
+      <div><label for="qDiff">Difficulty</label><select id="qDiff"><option value="all">Any</option><option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option></select></div>
+      <div><label for="qWhich">Questions</label><select id="qWhich"><option value="all">All</option><option value="new">Not attempted yet</option><option value="wrong">Previously incorrect</option></select></div>
+      <div><label for="qCount">How many</label><select id="qCount"><option value="10">10</option><option value="20">20</option><option value="all">All available</option></select></div>
+    </div>
+    <div class="btnrow"><button class="b" id="qStart">Start quiz</button></div>
+  </div>
+  <div id="qBox"></div>
+  <div id="qHistory"></div>
+</section>
+
+<!-- ============================ FLASHCARDS ============================ -->
+<section class="page" id="cards">
+  <div class="chips revtabs"><button class="chip on" data-go="cards">🃏 Flashcards &amp; glossary</button><button class="chip" data-go="sheet">📄 Cheat sheet</button></div>
+  <h1>Flashcards &amp; Glossary</h1>
+  <div class="card">
+    <div class="row"><div><label for="fcCh">Topic</label><select id="fcCh"></select></div>
+    <div style="flex:none"><button class="b alt" id="fcShuf">Shuffle</button></div></div>
+    <div class="fc"><div class="fc-in" id="fcCard"></div></div>
+    <p style="text-align:center;color:var(--muted)" id="fcInfo"></p>
+    <div class="fc-btns">
+      <button class="b alt" id="fcPrev">◀ Prev</button>
+      <button class="b" id="fcFlip">Flip</button>
+      <button class="b alt" id="fcNext">Next ▶</button></div>
+    <p style="text-align:center;color:var(--muted)">Tip: tap the card to flip. Say the answer out loud before flipping.</p>
+  </div>
+  <h2>Glossary (search)</h2>
+  <label for="gloSearch">Search a term</label>
+  <input type="text" id="gloSearch" placeholder="e.g. naturalized, advocacy, bureaucracy" style="width:100%;max-width:520px">
+  <div class="scroll"><table id="gloTable"></table></div>
+</section>
+
+<!-- ============================ CHEAT SHEET ============================ -->
+<section class="page sheet" id="sheet">
+  <div class="chips revtabs"><button class="chip" data-go="cards">🃏 Flashcards &amp; glossary</button><button class="chip on" data-go="sheet">📄 Cheat sheet</button></div>
+  <h1>One-Page Cheat Sheet</h1>
+  <button class="b noprint" onclick="printSheet()">🖨️ Print / Save cheat sheet as PDF</button>
+  <div class="grid">
+    <div class="card"><h3>1. Civics</h3><ul>
+      <li>Study of rights, duties and responsibilities of citizenship</li>
+      <li>Origin: city-state (polis), direct democracy → modern countries, national and global concerns</li>
+      <li>Significance (7): information · rights and responsibilities · political participation · global awareness · economic issues · character building · community welfare</li>
+      <li>Key concepts: citizenship · democracy · rule of law · public participation · civic virtue</li></ul></div>
+    <div class="card"><h3>2. Citizenship</h3><ul>
+      <li>Formal membership of a nation: rights + obligations + mutual loyalty</li>
+      <li>Definitions: Marshall (status, equal rights and duties) · Miliband (bond with the state) · Miller (rights and obligations, protection) · Kymlicka (relationship, active participation)</li>
+      <li>Natural-born: automatic at birth · Naturalized: legal process (residency, tests, oath)</li>
+      <li>Types (9): active · digital · global · ecological · corporate · passive · economic · informed · inclusive</li></ul></div>
+    <div class="card"><h3>2b. Rights, duties, principles</h3><ul>
+      <li>Rights: expression · vote · fair trial · assembly · education</li>
+      <li>Responsibilities: obey laws · pay taxes · jury · democratic participation · defend the country</li>
+      <li>Principles: equality · rule of law · participation · responsibility · liberty</li></ul></div>
+    <div class="card"><h3>3. Civic and community engagement</h3><ul>
+      <li>“Interactions of citizens with their society and their government”</li>
+      <li>Definitions: Delli Carpini · Ehrlich · Van Benshoten</li>
+      <li>Terms: community engagement · public participation · volunteerism (no financial gain) · advocacy</li>
+      <li>Importance (7): communities · democratic participation · empowerment · social justice · civic responsibility · social networks · government accountability</li>
+      <li>Ways: volunteering · advocacy · public meetings · community projects · political involvement</li>
+      <li>Challenges: lack of awareness · political apathy · misinformation · barriers to participation</li></ul></div>
+    <div class="card"><h3>4. Democracy</h3><ul>
+      <li>Power from the people, directly or through elected representatives; equality, freedom, justice</li>
+      <li>Definitions: Dahl · Schumpeter · Dewey · Lincoln (of, by, for the people)</li>
+      <li>Types: direct (Athens) · representative (US, Pakistan, India) · constitutional · liberal · participatory</li>
+      <li>With citizenship: foundation · rights and obligations · welfare · participation and representation · accountability · education · civic identity · empowerment and inclusion · mutual reinforcement</li></ul></div>
+    <div class="card"><h3>5. Modern society (14)</h3><ul>
+      <li>1 rule of law · 2 human rights · 3 industrialization · 4 urbanization · 5 secularization · 6 bureaucracy (Max Weber) · 7 democratic governance</li>
+      <li>8 individualism · 9 social mobility · 10 multiculturalism · 11 mass media · 12 science and technology · 13 social change · 14 ethical dilemmas</li>
+      <li>Citizenship today = legal status + active participation, locally and globally</li></ul></div>
+  </div>
+</section>
+
+</main>
+<footer>Civics &amp; Community Engagement notes · from Lecture 1 and the course book pages</footer>
+
+<script src="js/core.js"></script>
+<script src="js/progress.js"></script>
+<script src="js/quiz-data.js"></script>
+<script src="js/scenario-data.js"></script>
+<script src="js/scenarios.js"></script>
+<script src="js/quiz-modes.js"></script>
+<script src="js/revise.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
